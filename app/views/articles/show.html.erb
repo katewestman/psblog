@@ -1,0 +1,26 @@
+<style>
+p {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+</style>
+<body style="background-color:powderblue;">
+<p>
+  <!--<strong>Title:</strong> -->
+  <h1 style="text-align:center;"><%= @article.title %></h1>
+</p>
+<p style="text-align:center;">
+  <!--<strong>Text:</strong>-->
+  <%= @article.text %>
+</p>
+</body>
+<br/>
+<br/>
+
+<h3 style="text-align:center;">Comments</h3>
+<%= render @article.comments %>
+
+<h4>Add a comment:</h4>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

@@ -1,0 +1,24 @@
+<p style="text-align:center;">
+  <strong><%= comment.commenter %></strong>
+  <strong>: </strong>
+  <%= comment.body %><br>
+  <small><%= link_to 'Delete Comment', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %></small>
+</p>
+
+<!--<p style="text-align:center;">
+  <strong>Commenter:</strong>
+  <%= comment.commenter %>
+</p> -->
+
+<!--<p style="text-align:center;">
+  <strong>Comment:</strong>
+  <%= comment.body %>
+</p> -->
+
+<!--<p style="text-align:center;">
+  <%= link_to 'Delete Comment', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>-->
